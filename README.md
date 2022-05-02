@@ -51,6 +51,7 @@ Also don't forget to set up `\*.cljd` files as Clojure files:
 ## Vim
 
 Same example with `reduce-`:
+
 <img width="775" alt="vim example" src="https://user-images.githubusercontent.com/14236531/166267179-aac9e81f-8b2d-459d-81ca-d6170dc5a9e3.png">
 
 Pros:
