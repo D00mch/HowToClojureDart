@@ -23,7 +23,7 @@ I would also recommend installing the Flutter extension ([docs](https://docs.flu
 
 Pros:
 - fast and easy to set up;
-- unique Joyride plugin, that allows to run editor scripts with Clojure REPL.
+- unique [Joyride](https://marketplace.visualstudio.com/items?itemName=betterthantomorrow.joyride) plugin, that allows to run editor scripts with Clojure REPL.
 
 ## Intellij Idea — no support yet
 
