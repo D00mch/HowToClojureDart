@@ -2,7 +2,7 @@
 
 April 16th, the [ClojureDart](https://github.com/Tensegritics/ClojureDart) release day, and the meaning of this is crucial. Clojure devs are now able to write mobile, web and desktop apps with Flutter.
 
-Currently, tools are not yet ready to go full speed. There is no REPL(!) and no dart-interop autocompletion, but it is still usable. Also, some of the Clojure magic is being shown already, for example, check [the nest macro](https://github.com/Tensegritics/ClojureDart/blob/main/doc/flutter-helpers.md#nest-macro) and compare [similar clj-code vs dart](https://web.telegram.org/z/#:~:text=https%3A//twitter.com/cgrand/status/1517652416396730369%3Ft%3DT2md7PwYw8kfbulzAlVhUQ%26s%3D09).
+Currently, tools are not yet ready to go full speed. There is no REPL(!) and no dart-interop autocompletion, but it is still usable. Also, some of the Clojure magic is being shown already, for example, check [the nest macro](https://github.com/Tensegritics/ClojureDart/blob/main/doc/flutter-helpers.md#nest-macro) and compare [similar clj-code vs dart](https://twitter.com/cgrand/status/1517652416396730369?t=T2md7PwYw8kfbulzAlVhUQ&s=09).
 
 The goal of this article is to show how to write your first Flutter app with Clojure, what tools to use, and where to ask questions. The reader should keep in mind that minor clojure experience is required.
 
