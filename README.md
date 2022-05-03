@@ -8,7 +8,8 @@ The goal of this article is to show how to write your first Flutter app with Clo
 
 # The tools
 
-For the ClojureDart journey you would need to [set up Flutter](https://docs.flutter.dev/get-started/install) on your machine, [Clojure cli](https://clojure.org/guides/deps_and_cli), and additionally I would recommend [Clj-kondo](https://github.com/clj-kondo/clj-kondo). The last would be helpful for [widget macro](https://github.com/Tensegritics/ClojureDart/blob/main/doc/flutter-helpers.md#widget-macro) warnings:
+For the ClojureDart journey you would need to [set up Flutter](https://docs.flutter.dev/get-started/install) on your machine, [Clojure cli](https://clojure.org/guides/deps_and_cli), and additionally I would recommend [Clj-kondo](https://github.com/clj-kondo/clj-kondo) (note that it's already built in lsp). The last would be helpful for [widget macro](https://github.com/Tensegritics/ClojureDart/blob/main/doc/flutter-helpers.md#widget-macro) warnings:
+
 ![clj-kondo-warnings](https://user-images.githubusercontent.com/14236531/166266665-9a51c70e-666b-4720-9b01-192ef0662629.gif)
 
 # Choose your the editor
@@ -28,6 +29,7 @@ Pros:
 ## Intellij Idea — no support yet
 
 The result you would get (typing `reduce-` to show clojure-autocompletion):
+
 <img width="654" alt="idea example" src="https://user-images.githubusercontent.com/14236531/166266978-480a38a9-673e-440a-bf02-b9ce7ee4f209.png">
 
 As you see, there are warnings on dart-interop, and it's impossible to get rid of them without turning on "Power Safe Mode". 
