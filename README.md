@@ -124,7 +124,7 @@ And currently it's impossible to import a dart class without having it as a depe
 
 ## Building widget tree approach
 
-In most of the cases you should write a function like [here](https://github.com/Tensegritics/ClojureDart/tree/main/samples) in the authors' examples; and not declare a class with deftype like I did [here](https://github.com/Liverm0r/minataurus/blob/custom-widget/src/minataurus/fab.cljd). And StatefulWidgets should be created with the [alpha/widget macro](https://github.com/Tensegritics/ClojureDart/blob/main/doc/flutter-helpers.md#widget-macro).
+In most of the cases you should write a function like [here](https://github.com/Tensegritics/ClojureDart/tree/main/samples) in the authors' examples; and not declare a class with deftype like I did [here](https://github.com/Liverm0r/minataurus/blob/custom-widget/src/minataurus/fab.cljd). And StatefulWidgets should be created with the [alpha/widget macro](https://github.com/Tensegritics/ClojureDart/blob/main/doc/flutter-helpers.md#widget-macro). Take a look at the [commit](https://github.com/Liverm0r/minataurus/commit/4102ae4b8c38e4fd0721a3a1ffac9d091c589be8) where I fixed it. Less code, and the code is more clear.
 
 ## ClojureDart differs from Clojure
 
