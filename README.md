@@ -135,8 +135,9 @@ Next, you would definitely stumble upon the lack of libraries that return plain 
 # Resources
 
 1. [Official docs](https://github.com/Tensegritics/ClojureDart/tree/main/doc) on ClojureDart 
-2. [Samples](https://github.com/Tensegritics/ClojureDart/tree/main/samples) by the authors
-3. [GraphQL + MVU sample](https://github.com/Liverm0r/ClojureDartTeaExample)
-4. Custom widgets with deftype [sample](https://github.com/Liverm0r/minataurus/blob/custom-widget/src/minataurus/fab.cljd)
-5. Community: Clojurians [channel](https://clojurians.slack.com), #clojuredart
-6. Twitter разработчиков: [cgrand](https://twitter.com/cgrand), [BaptisteDupuch](https://twitter.com/BaptisteDupuch)
+2. [ClojureDart roadmap](https://github.com/Tensegritics/ClojureDart/projects/1)
+3. [Samples](https://github.com/Tensegritics/ClojureDart/tree/main/samples) by the authors
+4. [GraphQL + MVU sample](https://github.com/Liverm0r/ClojureDartTeaExample)
+5. Custom widgets with deftype [sample](https://github.com/Liverm0r/minataurus/blob/custom-widget/src/minataurus/fab.cljd)
+6. Community: Clojurians [channel](https://clojurians.slack.com), #clojuredart
+7. Twitter разработчиков: [cgrand](https://twitter.com/cgrand), [BaptisteDupuch](https://twitter.com/BaptisteDupuch)
