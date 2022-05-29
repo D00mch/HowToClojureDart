@@ -128,6 +128,8 @@ In most of the cases you should write a function like [here](https://github.com/
 
 There is also a [tool](https://github.com/Liverm0r/DartClojure) to convert Dart code to Clojure code, which helps to rewrite widgets (not general Dart).
 
+![Screen Recording 2022-05-29 at 19 38 44](https://user-images.githubusercontent.com/14236531/170881526-82983262-fd41-45e4-a90d-270859431890.gif)
+
 ## ClojureDart differs from Clojure
 
 First, consider reading [the docs](https://github.com/Tensegritics/ClojureDart/blob/main/doc/differences.md) from authors upon the subject.
