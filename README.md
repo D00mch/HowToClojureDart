@@ -95,9 +95,9 @@ ClojureDart authors are using Emacs, and [Clojure-mode](https://github.com/cloju
 
 # The workflow
 
-Good to start with the [hello-world](https://github.com/Tensegritics/ClojureDart/blob/main/doc/flutter-quick-start.md) and get comfortable with the tools.
+Good to start with the [hello-world](https://github.com/Tensegritics/ClojureDart/blob/main/doc/flutter-quick-start.md) and get comfortable with the tools. Here is a [video](https://www.youtube.com/watch?v=dfmRNTmfYVg&t=743s&ab_channel=ClojureDart) with the workflow.
 
-Then I would open 3 windows: 
+I would open 3 windows: 
 1. Dart file (could be a `\*.dart` file inside `lib/` directory) to be able to experiment with dart code, to check signatures, fields and methods.
 2. Terminal to see the logs and to interact with the hot-reload; 
 3. Emulator, in my experience Android is the good one. The easiest way to set up one is to install AndroidStuod and use Tools->DeviceManagement.
@@ -144,4 +144,5 @@ Next, you would definitely stumble upon the lack of libraries that return plain 
 4. [GraphQL + MVU sample](https://github.com/Liverm0r/ClojureDartTeaExample)
 5. Custom widgets with deftype [sample](https://github.com/Liverm0r/minataurus/blob/custom-widget/src/minataurus/fab.cljd)
 6. Community: Clojurians [channel](https://clojurians.slack.com), #clojuredart
-7. Twitter разработчиков: [cgrand](https://twitter.com/cgrand), [BaptisteDupuch](https://twitter.com/BaptisteDupuch)
+7. YouTube [channel](https://www.youtube.com/channel/UCCkvOkh6pXzYqkFKDgoyWRg).
+8. Dev's Twitter: [cgrand](https://twitter.com/cgrand), [BaptisteDupuch](https://twitter.com/BaptisteDupuch)
