@@ -16,7 +16,7 @@ For the ClojureDart journey you would need to [set up Flutter](https://docs.flut
 
 ## VSCode — easy to start
 
-I am not a VSCode user, but as far as I know, it's the easiest option to start. Just install Calva, and you are ready to go:
+The easiest option to start ([docs](https://calva.io/clojuredart)). Just install Calva, and you are ready to go:
 
 https://user-images.githubusercontent.com/14236531/166266488-75e3d9ef-7e0a-421f-b87d-87d727195280.mp4
 
@@ -24,6 +24,7 @@ I would also recommend installing the Flutter extension ([docs](https://docs.flu
 
 Pros:
 - fast and easy to set up;
+- Dart->Clojure converter support;
 - unique [Joyride](https://marketplace.visualstudio.com/items?itemName=betterthantomorrow.joyride) plugin, that allows to run editor scripts with Clojure REPL.
 
 ## Intellij Idea — no support yet
