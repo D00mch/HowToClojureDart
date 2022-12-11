@@ -147,3 +147,4 @@ Next, you would definitely stumble upon the lack of libraries that return plain 
 6. Community: Clojurians [channel](https://clojurians.slack.com), #clojuredart
 7. YouTube [channel](https://www.youtube.com/channel/UCCkvOkh6pXzYqkFKDgoyWRg).
 8. Dev's Twitter: [cgrand](https://twitter.com/cgrand), [BaptisteDupuch](https://twitter.com/BaptisteDupuch)
+9. DartClojure [Workshop](https://clojure.stream/workshops/clojuredart)
