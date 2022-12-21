@@ -1,8 +1,8 @@
 # Introduction
 
-April 16th, the [ClojureDart](https://github.com/Tensegritics/ClojureDart) release day, and the meaning of this is crucial. Clojure devs are now able to write mobile, web and desktop apps with Flutter.
+On April 16th, the [ClojureDart](https://github.com/Tensegritics/ClojureDart) release made it possible for Clojure developers to create mobile, web, and desktop apps using Flutter.
 
-Currently, tools are not yet ready to go full speed. There is no REPL(!) and no dart-interop autocompletion, but it is still usable. Also, some of the Clojure magic is being shown already, for example, check [the nest macro](https://github.com/Tensegritics/ClojureDart/blob/main/doc/flutter-helpers.md#nest-macro) and compare [similar clj-code vs dart](https://twitter.com/cgrand/status/1517652416396730369?t=T2md7PwYw8kfbulzAlVhUQ&s=09).
+While tools are not yet fully developed, with the absence of a REPL and autocompletion for dart-interop, it is still possible to use ClojureDart. Also, some of the Clojure magic is being shown already, for example, check [the `nest` macro](https://github.com/Tensegritics/ClojureDart/blob/main/doc/flutter-helpers.md#nest-macro) (update: `widget` macro can do the same) and compare [similar clj-code vs dart](https://twitter.com/cgrand/status/1517652416396730369?t=T2md7PwYw8kfbulzAlVhUQ&s=09). I've also written a post about the benefits of using Clojure: [Why Flutter needs Clojure](https://functional.works-hub.com/learn/why-flutter-needs-clojure-45b93). 
 
 The goal of this article is to show how to write your first Flutter app with Clojure, what tools to use, and where to ask questions. The reader should keep in mind that minor clojure experience is required.
 
@@ -78,7 +78,7 @@ au! BufRead,BufNewFile *.cljd setfiletype clojure
 ```
 I am using this config at the moment and besides dart-interop there are almost everything: refactorings, goto definition, find usages, autocompletion, docs, namespace cleaning.
 
-[My config](https://github.com/Liverm0r/dotfiles/blob/master/.config/nvim/fnl/plugin/lspconfig.fnl) is written in Fennel. Going through this is out of the scope of this article. If you want to try using Lisp for configuration yourself, I would recommend starting with [aniseed](https://github.com/Olical/aniseed) plugin and the authors dotfiles. As the first config you could use [this project](https://github.com/rafaeldelboni/nvim-fennel-lsp-conjure-as-clojure-ide) or try [nyoom](https://github.com/shaunsingh/nyoom.nvim) setup.
+[My config](https://github.com/d00mch/dotfiles/blob/master/.config/nvim/fnl/plugin/lspconfig.fnl) is written in Fennel. Going through this is out of the scope of this article. If you want to try using Lisp for configuration yourself, I would recommend starting with [aniseed](https://github.com/Olical/aniseed) plugin and the authors dotfiles. As the first config you could use [this project](https://github.com/rafaeldelboni/nvim-fennel-lsp-conjure-as-clojure-ide) or try [nyoom](https://github.com/shaunsingh/nyoom.nvim) setup.
 
 ### Vim with the VimIced plugin
 
@@ -125,9 +125,9 @@ And currently it's impossible to import a dart class without having it as a depe
 
 ## Building widget tree approach
 
-In most of the cases you should write a function like [here](https://github.com/Tensegritics/ClojureDart/tree/main/samples) in the authors' examples; and not declare a class with deftype like I did [here](https://github.com/Liverm0r/minataurus/blob/custom-widget/src/minataurus/fab.cljd). And StatefulWidgets should be created with the [alpha/widget macro](https://github.com/Tensegritics/ClojureDart/blob/main/doc/flutter-helpers.md#widget-macro). Take a look at the [commit](https://github.com/Liverm0r/minataurus/commit/4102ae4b8c38e4fd0721a3a1ffac9d091c589be8) where I fixed it. Less code, and the code is more clear.
+In most of the cases you should write a function like [here](https://github.com/Tensegritics/ClojureDart/tree/main/samples) in the authors' examples; and not declare a class with deftype like I did [here](https://github.com/d00mch/minataurus/blob/custom-widget/src/minataurus/fab.cljd). And StatefulWidgets should be created with the [alpha/widget macro](https://github.com/Tensegritics/ClojureDart/blob/main/doc/flutter-helpers.md#widget-macro). Take a look at the [commit](https://github.com/d00mch/minataurus/commit/4102ae4b8c38e4fd0721a3a1ffac9d091c589be8) where I fixed it. Less code, and the code is more clear.
 
-There is also a [tool](https://github.com/Liverm0r/DartClojure) to convert Dart code to Clojure code, which helps to rewrite widgets (not general Dart).
+There is also a [tool](https://github.com/d00mch/DartClojure) to convert Dart code to Clojure code, which helps to rewrite widgets (not general Dart).
 
 ![Screen Recording 2022-05-29 at 19 38 44](https://user-images.githubusercontent.com/14236531/170881526-82983262-fd41-45e4-a90d-270859431890.gif)
 
@@ -135,15 +135,15 @@ There is also a [tool](https://github.com/Liverm0r/DartClojure) to convert Dart 
 
 First, consider reading [the docs](https://github.com/Tensegritics/ClojureDart/blob/main/doc/differences.md) from authors upon the subject.
 
-Next, you would definitely stumble upon the lack of libraries that return plain old  Clojure PersistentHashMap. Instead you will have to deal with dart Maps. Here in the [GraphQL example](https://github.com/Liverm0r/ClojureDartTeaExample/blob/main/src/tea/api.cljd) I wrote a function to convert dart Map into clojure PersistentHashMap.
+Next, you would definitely stumble upon the lack of libraries that return plain old  Clojure PersistentHashMap. Instead you will have to deal with dart Maps. Here in the [GraphQL example](https://github.com/d00mch/ClojureDartTeaExample/blob/main/src/tea/api.cljd) I wrote a function to convert dart Map into clojure PersistentHashMap.
 
 # Resources
 
 1. [Official docs](https://github.com/Tensegritics/ClojureDart/tree/main/doc) on ClojureDart 
 2. [ClojureDart roadmap](https://github.com/Tensegritics/ClojureDart/projects/1)
 3. [Samples](https://github.com/Tensegritics/ClojureDart/tree/main/samples) by the authors
-4. [GraphQL + MVU sample](https://github.com/Liverm0r/ClojureDartTeaExample)
-5. Custom widgets with deftype [sample](https://github.com/Liverm0r/minataurus/blob/custom-widget/src/minataurus/fab.cljd)
+4. [GraphQL + MVU sample](https://github.com/d00mch/ClojureDartTeaExample)
+5. Custom widgets with deftype [sample](https://github.com/d00mch/minataurus/blob/custom-widget/src/minataurus/fab.cljd)
 6. Community: Clojurians [channel](https://clojurians.slack.com), #clojuredart
 7. YouTube [channel](https://www.youtube.com/channel/UCCkvOkh6pXzYqkFKDgoyWRg).
 8. Dev's Twitter: [cgrand](https://twitter.com/cgrand), [BaptisteDupuch](https://twitter.com/BaptisteDupuch)
